@@ -10,14 +10,14 @@ class CodeReviewConfig(BaseModel):
     Configuration settings for the Code Review agent.
     
     Attributes:
-        model (str): The LLM model to use for code review (default: llama3-8b-8192)
+        model (str): The LLM model to use for code review (default: llama-3.1-8b-instant)
         groq_api_endpoint (str): GROQ API endpoint URL
         groq_api_key (str): Authentication key for GROQ API
         github_token (str): GitHub authentication token
         repo_name (str): GitHub repository name in format "username/repo"
         pull_request_number (int): PR number to review
     """
-    model: str = "llama3-8b-8192"  # Default model for code review
+    model: str = "llama-3.1-8b-instant"  # Default model for code review
     groq_api_endpoint: str
     groq_api_key: str
     github_token: str

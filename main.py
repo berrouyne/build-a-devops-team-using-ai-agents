@@ -76,7 +76,7 @@ def main():
     # 4. Predict Build Success/Failure
     print("\n4️⃣ Build Predictor Agent: Analyzing build patterns...")
     predictor_config = BuildPredictorConfig(
-        model="llama3-8b-8192",  # Using Groq's recommended model
+        model="llama-3.1-8b-instant",  # Using Groq's recommended model
         groq_api_endpoint=os.getenv("GROQ_API_ENDPOINT"),
         groq_api_key=os.getenv("GROQ_API_KEY")
     )

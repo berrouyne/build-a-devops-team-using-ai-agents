@@ -9,10 +9,10 @@ class BuildPredictorConfig(BaseModel):
     Configuration settings for the BuildPredictor agent.
     
     Attributes:
-        model (str): The LLM model to be used for predictions (default: llama3-8b-8192)
+        model (str): The LLM model to be used for predictions (default: llama-3.1-8b-instant)
         groq_api_key (str): API key for authentication with Groq's services
     """
-    model: str = "llama3-8b-8192"  # Using Groq's recommended model
+    model: str = "llama3.1-8b-instant"  # Using Groq's recommended model
     groq_api_key: str
 
 class BuildPredictorAgent(Agent):
